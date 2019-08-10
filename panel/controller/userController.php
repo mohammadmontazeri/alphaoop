@@ -12,7 +12,7 @@ $class=new User();
              }else{
                  $result = $class->register($_SESSION['data']);
                  session_destroy();
-                 header("location:register.php?okInformation");
+                 header("location:register.php?m=okInformation");
              }
             break;
 
@@ -24,6 +24,8 @@ $class=new User();
                     header("location:login.php?incorrectpass");
                 }elseif ($res == "no register"){
                     header("location:login.php?noregister");
+                }elseif ($res == "No permission"){
+                    header("location:login.php?permissionError");
                 }
             break;
 

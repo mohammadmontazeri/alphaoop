@@ -36,9 +36,9 @@ if (isset($_POST['btn'])) {
 <body class="register-page">
 <div class="register-box">
    <?php
-  if ($_GET){
-      echo "<span style='color: #f0004c'> ثبت نام شما با موفقیت انجام شد</span>";
-  }
+          if (isset($_GET['m'])){
+              echo "<span style='color: #f0004c'> ثبت نام شما با موفقیت انجام شد</span>";
+          }
     ?>
     <div class="register-logo">
         <a href="#l"><b>صفحه </b>ثبت نام</a>

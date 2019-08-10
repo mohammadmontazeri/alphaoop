@@ -35,7 +35,12 @@ class User {
         $res = $result->fetch(PDO::FETCH_ASSOC);
         if (!empty($res)){
             if ($res['password']==sha1($data['password'])){
-                return "OK";
+                if ($res['role'] =="admin" ){
+                    return "OK";
+                }else{
+                    return "No permission";
+                }
+
             }else{
                 return "incorrect pass";
             }

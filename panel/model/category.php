@@ -80,7 +80,21 @@ class Category {
     {
         $this->pdo->query("UPDATE categories SET name = '$name' WHERE id = '$id'");
     }
-
+    /// End AdminPanel Queries
+    /*public function displayPost($cat_id)
+    {
+        $result = $this->pdo->query("SELECT * FROM categories INNER JOIN posts ON posts.cat_id=$cat_id");
+        //echo $result->rowCount();die;
+        //$res = $result->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }*/
+    public function displayPost($cat_id)
+    {
+        $result = $this->pdo->query("SELECT * FROM posts WHERE  cat_id=$cat_id");
+        //echo $result->rowCount();die;
+        //$res = $result->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
 
 }
 

@@ -39,7 +39,7 @@
             <div class="form-group">
                 <label for="exampleInputFile">تصویر شاخص</label>
                 <input type="file" id="exampleInputFile" name="image" value="<?php echo $result['image']?>">
-                <img src="<?php echo $result['image']?>" width="50px">
+                <img src="http://localhost:8080/alpha/panel/<?php echo $result['image']?>" width="50px">
             </div>
         </div><!-- /.box-body -->
 

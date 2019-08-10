@@ -11,7 +11,7 @@ if(isset($_FILES['upload']['name']))
     {
         move_uploaded_file($file, 'uploads/' . $new_image_name);
         $function_number = $_GET['CKEditorFuncNum'];
-        $url ="http://localhost:8080". "/alpha/panel/uploads/" . $new_image_name;
+        $url ="http://localhost:8080"."/alpha/panel/uploads/" . $new_image_name;
         $message = '';
         echo "<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction($function_number, '$url', '$message');</script>";
     }
@@ -25,7 +25,7 @@ class Upload{
         $sName = explode('.',$name);
         $end = end($sName);
         $rand = rand(100,999);
-        $picname = $rand."_".$post_title.".".$end;
+        $picname = $rand."_".".".$end;
         $path = "uploads/".$picname;
         move_uploaded_file($image['tmp_name'],$path);
         return $path;

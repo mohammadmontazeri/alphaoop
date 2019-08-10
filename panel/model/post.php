@@ -16,13 +16,13 @@ class Post
 
     public function showIndex()
     {
-        $res = $this->pdo->query("SELECT * FROM posts");
+        $res = $this->pdo->query("SELECT * FROM posts ORDER by id DESC");
         return $res;
     }
 
     public function showCatAdd()
     {
-        $result = $this->pdo->query("SELECT * FROM categories WHERE (parent > '0') AND (is_parent = '0')");
+        $result = $this->pdo->query("SELECT * FROM categories WHERE  (is_parent = '0')");
         //$res = $result->fetch(PDO::FETCH_ASSOC);
         return $result;
     }
@@ -57,13 +57,18 @@ class Post
         $this->pdo->query("UPDATE posts SET title = '$data[title]',writer = '$data[writer]',summery ='$data[summery]',image = '$url',text ='$data[text]',cat_id ='$data[cat_id]'  WHERE id = '$id'");
     }
 
-   /* public function test()
+   public function ShowRandIndex()
+   {
+       $result = $this->pdo->query("SELECT * FROM posts ORDER BY RAND() LIMIT 1,2");
+       //$res = $result->rowCount();
+       //$res = $result->fetch(PDO::FETCH_ASSOC);
+       return $result;
+   }
+    public function ShowAllCommentIbPostPage($id)
     {
-        $result = $this->pdo->query("SELECT * FROM users u INNER JOIN comments c ON u.id = c.user_id ");
-       // $res = $result->fetch(PDO::FETCH_ASSOC);
+        $result = $this->pdo->query("SELECT * FROM comments WHERE post_id = '$id'");
         return $result;
-    }*/
-
+    }
 }
 
 /*
