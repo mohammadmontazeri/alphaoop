@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,6 +57,12 @@
                 خروج              </a>
         </div>
     </div>-->
+    <div style="margin-top: 15px;">
+        <form action="index.php?c=index&a=search" method="post">
+            <input type="text" name="body" style="width:100%;padding: 6px 4px;box-sizing: border-box;border-radius: 2px;border: solid .5px #ccc;font-family: Vazir;font-size: .7em;" placeholder="پست مورد نظر خود را پیدا کنید ...">
+            <button  style="margin-top:5px;font-family: Vazir;font-weight: bold;background-color: #f0004c;color: #fff;padding: 5px 6px;box-sizing: border-box;outline: none;border: #eeeeee;border-radius: 2px;cursor: pointer;" name="btn">جستجو</button>
+        </form>
+    </div>
 </header>
 <section class="menu">
     <div class="sub_menu">

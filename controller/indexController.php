@@ -7,7 +7,10 @@ switch ($action){
             $randpost = $obj->ShowRandIndex();
             $posts = $obj->showIndex();
             break;
+    case 'search':
+        $posts = $obj->searchPost($_POST['body']);
 
+        break;
 
 
 

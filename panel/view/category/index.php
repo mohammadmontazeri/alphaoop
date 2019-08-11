@@ -37,9 +37,9 @@ if (!isset($categories)){
             }
         }
         echo "</ul>";
-        echo "<a style='margin-right: 10px;' href='index.php?c=category&a=add&q=main'><i class='fa fa-plus-square'></i></a>";
-    }
 
+    }
+    echo "<a style='margin-right: 10px;background-color: #bbb;color: #fff;border-radius: 2px;padding: 2.5px 3.5px;' href='index.php?c=category&a=add&q=main'><span>افزودن دسته جدید</span></a>";
     ch($categories);
 }
 ?>

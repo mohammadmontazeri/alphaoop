@@ -16,7 +16,7 @@ class Comment
 
     public function showIndex()
     {
-        $res = $this->pdo->query("SELECT * FROM comments");
+        $res = $this->pdo->query("SELECT * FROM comments ORDER BY id DESC ");
         return $res;
     }
 

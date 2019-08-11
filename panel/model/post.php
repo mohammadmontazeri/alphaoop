@@ -69,5 +69,10 @@ class Post
         $result = $this->pdo->query("SELECT * FROM comments WHERE post_id = '$id'");
         return $result;
     }
+    public function searchPost($data)
+    {
+        $result = $this->pdo->query("SELECT * FROM posts WHERE title LIKE '%$data%'");
+        return $result;
+    }
 }
 
