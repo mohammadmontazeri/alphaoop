@@ -123,55 +123,5 @@ class Comment
         $time = time();
         $this->pdo->query("INSERT INTO comments (post_id,user_id,body,parent,created_at) VALUES ('$post_id','$user_id','$data','$parent','$time')");
     }
-    /*public function showIndex()
-    {
-        $res = $this->pdo->query("SELECT * FROM posts");
-        return $res;
-    }
-
-    public function showCatAdd()
-    {
-        $result = $this->pdo->query("SELECT * FROM categories WHERE (parent > '0') AND (is_parent = '0')");
-        //$res = $result->fetch(PDO::FETCH_ASSOC);
-        return $result;
-    }
-
-    public function insert($data, $url)
-    {
-        $time = time();
-        $this->pdo->query("INSERT INTO posts (title,cat_id,writer,summery,text,image,created_at) VALUES ('$data[title]','$data[cat_id]','$data[writer]','$data[summery]','$data[text]','$url','$time')");
-    }
-
-    public function deletePost($data)
-    {
-        $this->pdo->query("DELETE FROM posts WHERE id='$data' ");
-    }
-
-    public function detailPost($id)
-    {
-        $result = $this->pdo->query("SELECT * FROM posts WHERE id='$id'");
-        $res = $result->fetch(PDO::FETCH_ASSOC);
-        return $res;
-    }
-
-    public function showEditInf($id)
-    {
-        $result = $this->pdo->query("SELECT * FROM posts WHERE id='$id'");
-        $res = $result->fetch(PDO::FETCH_ASSOC);
-        return $res;
-    }
-
-    public function updatePost($data,$id)
-    {
-        $title = $data['title'];
-        $this->pdo->query("UPDATE posts SET title = '$data[title]',writer = '$data[writer]',summery ='$data[summery]',text ='$data[text]',cat_id ='$data[cat_id]'  WHERE id = '$id'");
-    }*/
-
-   /* public function test()
-    {
-        $result = $this->pdo->query("SELECT * FROM users u INNER JOIN comments c ON u.id = c.user_id ");
-       // $res = $result->fetch(PDO::FETCH_ASSOC);
-        return $result;
-    }*/
 
 }

@@ -21,12 +21,14 @@
 
 <header class="header_item">
     <div class="logotop">
+        <a href="index.php">
           <span class="f_logo">
               چی
           </span>
         <span class="s_logo">
               گپ
           </span>
+        </a>
     </div>
     <!--  <div class="reg_sig">
          <a href="#" class="sig">
