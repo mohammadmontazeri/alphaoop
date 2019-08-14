@@ -1,16 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="ghaleb/ChiGap/css/style.css">
-    <link rel="stylesheet" href="ghaleb/ChiGap/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="ghaleb/ChiGap/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="ghaleb/ChiGap/css/media.css">
-    <script type="text/javascript" src="ghaleb/ChiGap/js/Untitled.js"></script>
-    <script type="text/javascript" src="ghaleb/ChiGap/js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="ghaleb/chigap/css/style.css">
+    <link rel="stylesheet" href="ghaleb/chigap/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="ghaleb/chigap/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="ghaleb/chigap/css/media.css">
+    <script type="text/javascript" src="ghaleb/chigap/js/Untitled.js"></script>
+    <script type="text/javascript" src="ghaleb/chigap/js/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>چی گپ |گپ هاتو تو چی گپ بنویس</title>
 </head>

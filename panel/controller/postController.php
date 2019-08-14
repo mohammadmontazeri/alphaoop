@@ -6,7 +6,7 @@ $class=new Post();
     switch($action) {
 
         case 'index':
-           $posts =  $class->showIndex();
+           //$posts =  $class->showIndex();
             break;
 
         case 'add':

@@ -16,7 +16,7 @@ if ($_GET['q']=="main") {
                             <select name="post_id" id="">
                                 <?php
                                 $obj = new Post();
-                                $res = $obj->showIndex();
+                                $res = $obj->numOfRec();
                                 foreach ($res as $re){
                                     ?>
                                     <option value="<?php echo $re['id']?>"><?php echo $re['title']?></option>

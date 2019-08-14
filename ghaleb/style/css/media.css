@@ -1,0 +1,287 @@
+
+@media (max-width:1300px){
+    .header_item .logotop .f_logo{
+        font-size: 2.2em;
+    }
+     .header_item .logotop .s_logo{
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width:1199px){
+.header_item .logotop .f_logo{
+        font-size: 2em;
+    }
+     .header_item .logotop .s_logo{
+        font-size: 2em;
+    }
+    .header_item{
+    width: 800px;
+}
+.header_item .reg_sig{
+    width: 13%;
+}
+.post_bac .post_section{
+    width: 75%;
+}
+.comment_part{
+    width: 75%;
+    
+}
+}
+
+@media (max-width:991px){
+    .header_item{
+    width: 80%;
+}
+.about_item .about{
+    width: 900px;
+   
+}
+.about_item .about .about_text{
+   font-size: 1em;
+} 
+.all_posts{
+    width: 90%;    
+}
+.all_posts .posts{
+    width: 90%;
+}
+.header_item .reg_sig{
+    width: 16%;
+}
+.header_item .hidden_welcome{
+    width: 55%;
+}
+.header_item .hidden_welcome .user_part_login .profile{
+    font-size: .8em;
+}
+.header_item .hidden_welcome .user_part_login .exit{
+    font-size: .8em;
+}
+.header_item .hidden_welcome .welcome a{
+    font-size: .78em;
+}
+
+}
+@media (max-width:767px){
+    .header_item{
+    width: 98%;
+}
+    .header_item .logotop {
+    width: 25%;
+}
+.about_item .about{
+    width: 90%;
+   
+}
+.about_item .about .about_text{
+   font-size: .9em;
+} 
+.all_posts{
+    width: 90%;    
+}
+.all_posts .posts{
+    width: 100%;
+}
+.all_posts .posts .post .right #pic_member{
+    width: 75px;
+    height: 50px;
+}
+.all_posts .posts .post .right #pic_member img{
+    width: 55px;
+    height: 55px;
+}
+.all_posts .posts .post .right .detail_member #name_member{
+    width: 85%;
+    font-size: .82em;
+}
+.all_posts .posts .post .right .detail_member span{
+    font-size: .78em;
+}
+.all_posts .posts .post .left a{
+    font-size: 1.4em;
+}
+.all_posts .posts .post .left p{
+    font-size: .86em;
+}
+.all_posts .posts .post .left .img_box{
+    width: 100%;
+    height: 90%;
+}
+.all_posts .posts .post .left .img_box img{
+    width: 100%;
+    height: 100%;
+}
+.reg_part{
+    width: 90%;
+    margin-top: 7.5%;
+}
+.login_part{
+    width: 90%;
+    margin-top: 7.5%;
+}
+.header_item .reg_sig{
+    width: 23%;
+}
+.header_item .hidden_welcome{
+    width: 75%;
+}
+    .header_item .hidden_welcome .welcome a{
+        margin-right: 3%;
+    }
+.header_item .hidden_welcome .user_part_login{
+    width: 49%;
+}
+    .header_item .hidden_welcome .welcome{
+        width: 51%;
+    }
+.post_bac .post_section{
+    width: 95%;
+}
+.comment_part{
+    width: 95%;
+    
+}
+
+}
+
+@media (max-width:479px){
+    .header_item{
+    width: 95%;
+}
+.header_item .logotop .f_logo{
+    font-size: 1.9em;
+}
+.header_item .logotop .s_logo{
+    font-size: 1.9em;
+}
+.header_item .logotop {
+    width: 30%;
+}
+.all_posts{
+    width: 100%;    
+}
+.all_posts .posts{
+    width: 99%;
+}
+.all_posts .posts .post .right{
+    width: 20%;
+}  
+.all_posts .posts .post .left{
+    width: 78%;
+} 
+.all_posts .posts .post .left p{
+    font-size: .78em;
+}
+.all_posts .posts .post .right .detail_member span{
+    font-size: .7em;
+}
+.all_posts .posts .post .right #pic_member{
+    width: 85%;
+}
+.all_posts .posts .post .right #pic_member img{
+    width: 90%;
+    height: 55px;
+}
+.all_posts .posts .post .left a{
+    font-size: 1.2em;
+}
+.all_posts .posts .post .left{
+    
+    border-right: solid 1px #eee;
+}
+.header_item .reg_sig{
+    margin-left: 4%;
+}
+.header_item .reg_sig .reg{
+   font-size: .9em;
+}
+.header_item .reg_sig .sig{
+    font-size: .9em;
+}
+.header_item .reg_sig .bet{
+    font-size: .9em;
+}
+.menu .sub_menu .all_sub{
+    font-size: .87em;
+    width: auto;
+}
+.menu .sub_menu .sub{
+    margin-left: 7.5%;  
+}
+.menu .sub_menu .sub a{
+    font-size: .75em;
+}
+.reg_part .top{
+    width: 80%;
+}
+.reg_part .top span{
+    font-size: 1.3em;
+}
+.login_part .top{
+    width: 85%;
+}
+.header_item .reg_sig{
+    width: 25%;
+}
+.header_item .hidden_welcome{
+    width: 70%;
+}
+.post_bac .post_section .usr_inf{
+    margin-right: 3.7%;
+    margin-top: 2.5%;
+}
+.post_bac .post_section .usr_pic img{
+    width: 50px;
+    height: 50px;
+}
+}
+
+@media (max-width:370px){
+    .header_item{
+    width: 98%;
+}
+.all_posts .posts .post .right #pic_member{
+    width: 95%;
+}
+.all_posts .posts .post .right #pic_member img{
+    width: 90%;
+    height: 55px;
+}
+.all_posts .posts .post .left a{
+    font-size: 1.1em;
+}
+.all_posts .posts .post .left{
+    
+    border-right: solid 1px #eee;
+    padding-right: 2.5%;
+}  
+.reg_part .bottom  .member_char_box .btn_register{
+
+    font-size: 1em;
+   
+}
+.header_item .hidden_welcome .user_part_login .profile{
+    font-size: .7em;
+}
+.header_item .hidden_welcome .user_part_login .exit{
+    font-size: .7em;
+}
+.header_item .hidden_welcome .welcome a{
+    font-size: .7em;
+    padding: 2px 4px;
+}
+.header_item .hidden_welcome{
+    width: 67%;
+}
+.header_item .logotop {
+    width: 33%;
+    letter-spacing: .1;
+}
+.header_item .reg_sig{
+    width: 35%;
+}
+}
+
+

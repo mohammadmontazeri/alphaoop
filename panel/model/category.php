@@ -34,7 +34,8 @@ class Category {
     public function allIsParent($data)
     {
         $result = $this->pdo->query("SELECT * FROM categories WHERE parent='$data'");
-        return $result;
+        $res = $result->fetch(PDO::FETCH_ASSOC);
+        return $res;
 
     }
 
@@ -94,6 +95,11 @@ class Category {
         //echo $result->rowCount();die;
         //$res = $result->fetch(PDO::FETCH_ASSOC);
         return $result;
+    }
+
+    public function zeroIsParent($data)
+    {
+        $this->pdo->query("UPDATE categories SET is_parent = '0' WHERE id = '$data'");
     }
 
 }

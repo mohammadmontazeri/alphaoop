@@ -35,6 +35,26 @@ if (isset($_POST['btn'])){
     <div class="login-logo">
         <a href="../../index2.html"><b>صفحه</b>ورود</a>
     </div><!-- /.login-logo -->
+    <?php
+    if (isset($_GET['error'])){
+       switch ($_GET['error']){
+            case 'incorrectpass':
+            echo "پسورد شما اشتباه است";
+            break;
+            case 'noregister':
+            echo "اطلاعات را به درستی وارد کنید";
+            break;
+            case 'permissionError':
+            echo "شما اجازه دسترسی  ندارید";
+            break;
+        }
+    }
+
+
+
+
+
+    ?>
     <div class="login-box-body">
         <p class="login-box-msg">اطلاعات کاربری</p>
         <form action="" method="post" enctype="multipart/form-data">

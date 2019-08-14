@@ -1,5 +1,18 @@
 <?php
 include 'jdf.php';
+include_once 'model/post.php';
+$obj = new Post();
+if (!isset($_GET['page'])){
+    $page = "1";
+}else{
+    $page = $_GET['page'];
+}
+$number_of_records =$obj->numOfRec()->rowCount();
+$number_result_per_pages = "2";
+$number_of_pages = ceil($number_of_records/$number_result_per_pages);
+$first = ($page-1)*2;
+//echo $first."=".$number_of_pages."=".$number_result_per_pages."+";die;
+$posts = $obj->showIndex($first,$number_result_per_pages);
 ?>
 <div class="row">
     <div class="col-xs-12">
@@ -51,10 +64,20 @@ include 'jdf.php';
                         </td>
                     </tr>
 
-                  <?php } ?>
+                  <?php }
+
+                  ?>
 
                 </table>
             </div><!-- /.box-body -->
+
         </div><!-- /.box -->
+        <?php
+        for ($page=1;$page<=$number_of_pages;$page++){
+            echo "<a style='margin-right:5px;' href='index.php?c=post&a=index&page=".$page."'>".$page."</a>";
+        }
+
+
+        ?>
     </div>
 </div>

@@ -21,11 +21,11 @@ $class=new User();
                 if ($res == "OK"){
                     header("location:index.php");
                 }elseif ($res == "incorrect pass"){
-                    header("location:login.php?incorrectpass");
+                    header("location:login.php?error=incorrectpass");
                 }elseif ($res == "no register"){
-                    header("location:login.php?noregister");
+                    header("location:login.php?error=noregister");
                 }elseif ($res == "No permission"){
-                    header("location:login.php?permissionError");
+                    header("location:login.php?error=permissionError");
                 }
             break;
 

@@ -1,7 +1,7 @@
 <?php
 include_once "panel/jdf.php";
 include_once "panel/model/comment.php";
-
+//date_default_timezone_set("Asia/Tehran");
 ?>
 <section class="post_bac">
     <div class="post_section">

@@ -7,25 +7,15 @@ $obj = new Comment();
            $post_id = $_GET['id'];
            $res=$obj->registerAuth($_POST['email']);
            if (!empty($res)){
-               if ($_POST['name'] != $res['name']){
-
-                   header("location:index.php?c=post&id=$post_id&q=error");
-               }else{
                    $user_id = $res['id'];
                    $obj->commentAddFromUser($_POST['body'],$user_id,$post_id);
                    header("location:index.php?c=post&id=$post_id");
-               }
            }else{
-               $name = $obj->registerAuthName($_POST['name']);
-                   if (empty($name)){
                    $result = $obj->registerForComment($_POST);
                    $user = $obj->registerAuth($_POST['email']);
                    $user_id = $user['id'];
                    $obj->commentAddFromUser($_POST['body'],$user_id,$post_id);
                    header("location:index.php?c=post&id=$post_id");
-                   }else{
-                       header("location:index.php?c=post&id=$post_id&q=existedName");
-                   }
            }
 
            break;

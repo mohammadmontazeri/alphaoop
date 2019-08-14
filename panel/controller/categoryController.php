@@ -9,6 +9,7 @@ $class=new Category();
 
         case 'delete':
                $parent = $class->isParentOne($_GET['q']);
+
                if ($parent['is_parent'] == 1){
                    $result = $class->allIsParent($parent['id']);
 
@@ -17,8 +18,15 @@ $class=new Category();
                    }
                }
 
-               $class->deleteIsParentOne($parent['id']);
+                $class->deleteIsParentOne($parent['id']);
 
+                $isparent = $class->showEdit($parent['parent']);
+                if ($isparent['is_parent'] == "1"){
+                    $output=$class->allIsParent($isparent['id']);
+                    if (empty($output)){
+                        $class->zeroIsParent($isparent['id']);
+                    }
+                }
                header("location:index.php?c=category&a=index");
             break;
         case 'add':

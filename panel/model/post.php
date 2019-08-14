@@ -14,12 +14,17 @@ class Post
         $this->pdo->query('SET CHARACTER SET utf8');
     }
 
-    public function showIndex()
+    public function showIndex($first,$second)
     {
-        $res = $this->pdo->query("SELECT * FROM posts ORDER by id DESC");
+        $res = $this->pdo->query("SELECT * FROM posts ORDER by id DESC LIMIT $first,$second");
         return $res;
     }
 
+    public function numOfRec()
+    {
+        $res = $this->pdo->query("SELECT * FROM posts ");
+        return $res;
+    }
     public function showCatAdd()
     {
         $result = $this->pdo->query("SELECT * FROM categories WHERE  (is_parent = '0')");
@@ -74,5 +79,16 @@ class Post
         $result = $this->pdo->query("SELECT * FROM posts WHERE title LIKE '%$data%'");
         return $result;
     }
+    public function showPaginateInCat($first,$second,$cat_id)
+    {
+        $res = $this->pdo->query("SELECT * FROM posts WHERE cat_id='$cat_id' ORDER by id DESC LIMIT $first,$second   ");
+        return $res;
+    }
+    public function numOfPostCat($cat_id)
+    {
+        $res = $this->pdo->query("SELECT * FROM posts WHERE cat_id='$cat_id'");
+        return $res;
+    }
+
 }
 
